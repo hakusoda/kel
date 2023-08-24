@@ -1,10 +1,11 @@
 import { Entity } from './entity';
-import type { ComponentCreator, CreatedComponent } from './component';
+import type { ComponentCreator, CreatedComponent } from './types';
 
 export const entities: Entity[] = [];
 export function add(...components: CreatedComponent<any>[]) {
 	const entity = new Entity(components);
 	entities.push(entity);
+	
 	print('created new entity with', components.size(), 'component(s)');
 }
 

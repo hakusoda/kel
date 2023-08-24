@@ -1,15 +1,9 @@
-export type ComponentCreator<T = any> = (data: T) => CreatedComponent<T>
-export interface CreatedComponent<T = unknown> {
-	data: T,
-	type: ComponentCreator<T>
-}
+import type { ComponentCreator } from './types';
 export function Component<T>(): ComponentCreator<T> {
-	const creator = (data: T) => {
-		return {
-			data,
-			type: creator
-		};
-	};
+	const creator = (data: T) => ({
+		data,
+		type: creator
+	});
 	components.push(creator);
 
 	return creator;
