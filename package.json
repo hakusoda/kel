@@ -1,6 +1,6 @@
 {
 	"name": "@voxelified/kel",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "out/init.lua",
 	"repository": "https://github.com/Excalware/kel.git",
 	"author": "katsumi143 <32640219+katsumi143@users.noreply.github.com>",
