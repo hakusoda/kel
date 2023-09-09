@@ -10,13 +10,16 @@
 		"build": "rbxtsc"
 	},
 	"types": "out/index.d.ts",
-	"files": ["out", "!**/*.tsbuildinfo"],
+	"files": [
+		"out",
+		"!**/*.tsbuildinfo"
+	],
 	"publishConfig": {
 		"access": "public"
 	},
 	"devDependencies": {
-		"@rbxts/compiler-types": "^2.1.0-types.1",
-		"@rbxts/types": "^1.0.702",
-		"typescript": "^5.1.6"
+		"@rbxts/compiler-types": "^2.1.1-types.0",
+		"@rbxts/types": "^1.0.712",
+		"typescript": "^5.2.2"
 	}
 }
