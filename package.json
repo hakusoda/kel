@@ -1,9 +1,9 @@
 {
 	"name": "@voxelified/kel",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"main": "out/init.lua",
-	"repository": "https://github.com/Excalware/kel.git",
-	"author": "katsumi143 <32640219+katsumi143@users.noreply.github.com>",
+	"repository": "https://github.com/voxelified/kel.git",
+	"author": "katsumi143",
 	"license": "MIT",
 	"scripts": {
 		"dev": "rbxtsc -w",
@@ -21,5 +21,9 @@
 		"@rbxts/compiler-types": "^2.1.1-types.0",
 		"@rbxts/types": "^1.0.712",
 		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"@rbxts/object-utils": "^1.0.4",
+		"@rbxts/services": "^1.5.1"
 	}
 }
